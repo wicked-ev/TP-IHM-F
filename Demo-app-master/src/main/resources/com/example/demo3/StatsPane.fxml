@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="680.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.StatsPane">
+   <children>
+      <Pane fx:id="StatPane" prefHeight="698.0" prefWidth="729.0">
+         <children>
+            <VBox prefHeight="698.0" prefWidth="729.0">
+               <children>
+                  <Text fx:id="T1" fill="#b5b5b5" strokeType="OUTSIDE" strokeWidth="0.0" text="   Today" wrappingWidth="727.19921875">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Text>
+                  <Line endX="626.4921264648438" endY="-2.035533905029297" startX="-100.0" stroke="#d0d0d0" strokeWidth="2.0" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="       " wrappingWidth="729.71484375">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="T11" fill="#464646" strokeType="OUTSIDE" strokeWidth="0.0" text="     Tasks completed  0  " wrappingWidth="727.19921875">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="T112" fill="#464646" strokeType="OUTSIDE" strokeWidth="0.0" text="     Focused Hours     0  " wrappingWidth="727.19921875">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="T1121" fill="#464646" strokeType="OUTSIDE" strokeWidth="0.0" text="     Break Hours         0" wrappingWidth="727.19921875">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="       " wrappingWidth="729.71484375">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Text>
+                  <BarChart prefHeight="402.0" prefWidth="741.0">
+                     <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis side="LEFT" />
+                     </yAxis>
+                  </BarChart>
+                  <HBox prefHeight="69.0" prefWidth="730.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="         " wrappingWidth="137.71484375">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="dayView_button" contentDisplay="TOP" mnemonicParsing="false" onAction="#dayView_action" onMouseExited="#Btn_3ME" onMouseMoved="#btn_3Hover" prefHeight="66.0" prefWidth="148.0" style="-fx-background-color: #353535;" text="Day" textFill="WHITE">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Button>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="  " wrappingWidth="17.71484375">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="weekView_button1" contentDisplay="TOP" mnemonicParsing="false" onAction="#weekView_action" onMouseExited="#Btn_3ME" onMouseMoved="#btn_3Hover" prefHeight="66.0" prefWidth="148.0" style="-fx-background-color: #353535;" text="Week" textFill="WHITE">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Button>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="  " wrappingWidth="17.71484375">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="monthView_button2" contentDisplay="TOP" mnemonicParsing="false" onAction="#monthView_action" onMouseExited="#Btn_3ME" onMouseMoved="#btn_3Hover" prefHeight="66.0" prefWidth="148.0" style="-fx-background-color: #353535;" text="Month" textFill="WHITE">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

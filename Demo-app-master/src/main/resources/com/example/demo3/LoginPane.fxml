@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="694.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.LoginPane">
+   <children>
+      <Pane id="LoginPan" layoutX="-9.0" layoutY="-2.0" prefHeight="698.0" prefWidth="727.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b5b5b5" height="698.0" layoutX="1.0" stroke="#dddddd" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="727.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="554.0" layoutX="159.0" layoutY="72.0" stroke="#fcfcfc" strokeLineJoin="ROUND" strokeType="INSIDE" width="409.0" />
+            <ImageView fx:id="iconIMG" fitHeight="139.0" fitWidth="158.0" layoutX="294.0" layoutY="116.0" opacity="0.53" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/Icons/userBlack.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="EmailTextField" layoutX="231.0" layoutY="337.0" prefHeight="40.0" prefWidth="266.0" />
+            <Text fill="#575757" layoutX="326.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Text>
+            <Text fill="#a8a8a8" layoutX="231.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="PassTextField" layoutX="230.0" layoutY="407.0" prefHeight="40.0" prefWidth="266.0" />
+            <Text fill="#a8a8a8" layoutX="231.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passowrd">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Button fx:id="Login_button" contentDisplay="TOP" layoutX="231.0" layoutY="460.0" mnemonicParsing="false" onAction="#MainP_button_action" onMouseExited="#Btn_2ME" onMouseMoved="#btn_2Hover" prefHeight="52.0" prefWidth="266.0" style="-fx-background-color: #ff4043;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Text layoutX="282.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="you don't have account," />
+            <Text fx:id="SingupLinkText" fill="#ff3333" layoutX="409.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Signup" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

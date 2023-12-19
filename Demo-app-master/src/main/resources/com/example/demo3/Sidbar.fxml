@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="698.0" prefWidth="281.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.Sidbar">
+   <children>
+      <Pane prefHeight="698.0" prefWidth="286.0">
+         <children>
+            <VBox prefHeight="698.0" prefWidth="285.0" style="-fx-background-color: #ff4043;">
+               <children>
+                  <Pane prefHeight="145.0" prefWidth="306.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="97.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PomoTask" wrappingWidth="157.71484375">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="52.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/Icons/Logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Button fx:id="MainPomodoro_button" contentDisplay="TOP" mnemonicParsing="false" onAction="#MainP_button_action" onMouseExited="#Btn_2ME" onMouseMoved="#btn_2Hover" prefHeight="108.0" prefWidth="285.0" style="-fx-background-color: #ff4043;" text=" " textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/Icons/clock.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Pane prefHeight="276.0" prefWidth="285.0" />
+                  <Button fx:id="settings_button" contentDisplay="TOP" mnemonicParsing="false" onAction="#Sett_button_action" onMouseExited="#Btn_2ME" onMouseMoved="#btn_2Hover" prefHeight="108.0" prefWidth="285.0" style="-fx-background-color: #ff4043;" text=" " textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/Icons/settings.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

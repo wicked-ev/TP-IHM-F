@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.EditTask">
+   <children>
+      <Pane layoutX="4.0" layoutY="3.0" prefHeight="687.0" prefWidth="716.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b5b5b5" height="698.0" layoutX="-7.0" layoutY="-5.0" stroke="#dddddd" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.0" width="727.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="487.0" layoutX="159.0" layoutY="106.0" stroke="#fcfcfc" strokeLineJoin="ROUND" strokeType="INSIDE" width="409.0" />
+            <TextField fx:id="TasksName2" layoutX="231.0" layoutY="199.0" prefHeight="40.0" prefWidth="266.0" />
+            <Text fill="#a8a8a8" layoutX="231.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tasks Name">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <TextField fx:id="TasksDuration2" layoutX="231.0" layoutY="304.0" prefHeight="40.0" prefWidth="125.0" />
+            <Button fx:id="Confirm_button" contentDisplay="TOP" layoutX="227.0" layoutY="484.0" mnemonicParsing="false" onAction="#Confirm_button_action" onMouseExited="#Btn_2ME" onMouseMoved="#btn_2Hover" prefHeight="56.0" prefWidth="132.0" style="-fx-background-color: #ff4043;" text="Confirm" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Text fx:id="Pomodoro_Quntity2" fill="#a8a8a8" layoutX="232.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pomodoro Quantity">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="DueDate2" layoutX="331.0" layoutY="384.0" prefHeight="25.0" prefWidth="160.0" />
+            <Text fill="#a8a8a8" layoutX="231.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Due date">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Button fx:id="Exist_button2" contentDisplay="TOP" layoutX="514.0" layoutY="112.0" mnemonicParsing="false" onAction="#Exist_button_action" onMouseExited="#Btn_2ME" onMouseMoved="#btn_2Hover" prefHeight="40.0" prefWidth="46.0" style="-fx-background-color: #ff4043;" text="x" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="Delete_button1" contentDisplay="TOP" layoutX="389.0" layoutY="484.0" mnemonicParsing="false" onAction="#Delete_button_action" onMouseExited="#Btn_2ME" onMouseMoved="#btn_2Hover" prefHeight="56.0" prefWidth="125.0" style="-fx-background-color: #ff4043;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
